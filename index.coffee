@@ -21,9 +21,9 @@ module.exports = class ColourPicker extends Emitter
         ]
     ]
 
-    constructor: (options) ->
+    ###constructor: (options) ->
         @options = options || {}
-        @options.container = @options.container || "body"
+        @options.container = @options.container || "body"###
 
     getTemplate: =>
         template = "<div class='colour-picker'>"
@@ -39,9 +39,11 @@ module.exports = class ColourPicker extends Emitter
         return template
 
     render: =>
-        document.querySelector(@options.container).innerHTML = @getTemplate()
-        el = document.querySelector('.colour-picker')
+        ###document.querySelector(@options.container).innerHTML = @getTemplate()###
+        ###el = document.querySelector('.colour-picker')###
+        el = @getTemplate()
 
-        delegate.bind(el, '.colour', 'click', (e)=>
+        delegate.bind(document, '.colour', 'click', (e)=>
             @emit('picked', e.srcElement.style.backgroundColor)
         , false);
+        return el

@@ -10,9 +10,10 @@
   <body>
     <div class="example"></div>
     <script>
-      var Picker = require('colourpicker');
-      var picker = new Picker({container:".example"});
-      picker.render();
+      var Picker = require('colour-picker');
+      /*var picker = new Picker({container:".example"});*/
+      var picker = new Picker();
+      $(".example").html(picker.render());
       
       picker.on("picked", function(colour){
           console.log("colour is: " + colour);
