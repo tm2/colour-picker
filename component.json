@@ -1,6 +1,6 @@
 {
-  "name": "colourpicker",
-  "repo": "component/colourpicker",
+  "name": "colour-picker",
+  "repo": "tm2/colour-picker",
   "description": "Basic Colour Picker",
   "version": "0.0.1",
   "keywords": [],
