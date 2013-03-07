@@ -1,0 +1,19 @@
+{
+  "name": "colourpicker",
+  "repo": "component/colourpicker",
+  "description": "Basic Colour Picker",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/emitter": "*",
+    "component/delegate": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "colourpicker.css"
+  ]
+}

@@ -1,0 +1,29 @@
+.colour-picker{
+    padding:5px;
+}
+
+.colour-picker table{
+    border-collapse: collapse;
+}
+
+.colour-picker table:not(:first-child){
+    margin-top: 5px;
+}
+
+.colour-picker td{
+    padding:0px;
+}
+
+.colour-picker td:not(:first-child){
+    padding-left:5px;
+}
+
+.colour-picker .colour{
+    min-width: 25px;
+    min-height: 25px;
+    border: 1px solid black;
+}
+.colour-picker .colour:hover{
+    background: blue;
+    border: 1px solid orange;
+}

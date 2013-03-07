@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Colour Picker</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="colourpicker.css">
+    <script src="build/build.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <div class="example"></div>
+    <script>
+      var Picker = require('colourpicker');
+      var picker = new Picker({container:".example"});
+      picker.render();
+      
+      picker.on("picked", function(colour){
+          console.log("colour is: " + colour);
+        }
+      )
+    </script>
+  </body>
+</html>
