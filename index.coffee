@@ -35,7 +35,6 @@ module.exports = class ColourPicker extends Emitter
         return template
 
     render: =>
-        ###el = @getTemplate()###
         el = document.createElement('div');
         el.innerHTML = @getTemplate();
 
