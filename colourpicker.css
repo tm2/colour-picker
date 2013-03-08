@@ -19,9 +19,9 @@
 }
 
 .colour-picker .colour{
-    min-width: 25px;
-    min-height: 25px;
-    border: 1px solid black;
+    min-width: 16px;
+    min-height: 16px;
+    border: 1px solid transparent;
 }
 .colour-picker .colour:hover{
     background: blue;

@@ -44,9 +44,6 @@ module.exports = ColourPicker = (function(_super) {
   };
 
   ColourPicker.prototype.render = function() {
-    /*el = @getTemplate()
-    */
-
     var el,
       _this = this;
     el = document.createElement('div');
