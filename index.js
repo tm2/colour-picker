@@ -49,7 +49,7 @@ module.exports = ColourPicker = (function(_super) {
     el = document.createElement('div');
     el.innerHTML = this.getTemplate();
     delegate.bind(el, '.colour', 'click', function(e) {
-      return _this.emit('picked', e.srcElement.style.backgroundColor);
+      return _this.emit('picked', e.target.style.backgroundColor);
     }, false);
     return el;
   };

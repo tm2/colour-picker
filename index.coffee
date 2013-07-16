@@ -39,6 +39,6 @@ module.exports = class ColourPicker extends Emitter
         el.innerHTML = @getTemplate();
 
         delegate.bind(el, '.colour', 'click', (e)=>
-            @emit('picked', e.srcElement.style.backgroundColor)
+            @emit('picked', e.target.style.backgroundColor)
         , false);
         return el
