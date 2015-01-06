@@ -1,5 +1,6 @@
 .colour-picker{
     padding:5px;
+    display: inline-block
 }
 
 .colour-picker table{
@@ -24,6 +25,11 @@
     border: 1px solid transparent;
 }
 .colour-picker .colour:hover{
-    background: blue;
     border: 1px solid orange;
+    cursor: pointer;
+}
+
+.colour-picker .default{
+  text-align:center;
+  width:100%;
 }

@@ -11,12 +11,12 @@
     <div class="example"></div>
     <script>
       var Picker = require('colour-picker');
-      /*var picker = new Picker({container:".example"});*/
       var picker = new Picker();
+      picker.useDefault = true
       $(".example").html(picker.render());
-      
+
       picker.on("picked", function(colour){
-          console.log("colour is: " + colour);
+          console.log("colour is: [" + colour + "]");
         }
       )
     </script>
